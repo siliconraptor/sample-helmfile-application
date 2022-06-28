@@ -6,6 +6,7 @@ remote_state {
 }
 
 terraform {
+  backend "local" {}
   source = "git::https://github.com/workwithprashant/devopsauto-argo.git?ref=main"
 }
 
