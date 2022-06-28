@@ -1,6 +1,6 @@
 remote_state {
   backend = "local"
-  config {
+  config = {
     path = "/tmp/terraform.tfstate"
   }
 }
