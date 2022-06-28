@@ -1,6 +1,8 @@
 remote_state {
-  backend "local" {
-    path = "/tmp/terraform.tfstate"
+  backend "local"
+  generate = {
+    path = "/tmp/backend.tf"
+    if_exists = "overwrite_terragrunt"
   }
 }
 
