@@ -25,7 +25,7 @@ inputs = {
   argo_project: "sample-microservice"
   destination_k8s_namespace: "default"
   project_description: "sample service"
-  application_name: "sample-service"
+  application_name: get_env("APP_NAME", "")
   app_helmfile_env_name: get_env("ARGO_APPLICATION_ENV", "")
   app_helmfile_env_project: "sample-service"
 }
